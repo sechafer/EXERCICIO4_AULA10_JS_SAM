@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4 AULA 10 SELECCIONA TU ARCANO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>LOS ARCANOS</h1>
+    <h2>LAS DOCE CASAS </h2>
+    <h3>Recuerda son:  Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis </h3>
+    <section id="Banner">
+        <p>Seleccione su signo!</p>
+        <img id="gif_signo" src="image/gid_signo.gif" alt="Carrusel de signo zodiacales">
+        <img src="image/banner_signo.jpg" alt="Logo de los signo del zodiaco">
+    </section>
+    </header>
+    <h3>Para inscribir su signo , por favor llenar  el siguiente  formulario:</h3>
+
+    <form onsubmit="registrar_signo()" id="Formulario_Nuevo_Signo">
+        <div>
+        <label>
+            Nombre de la Persona:
+            <input type="text" id="Nombre" placeholder="Pedro Perez." required> 
+        </label>
+        <label>
+            País de Origen:
+            <input type="text" id="Origen" placeholder="Brasil" required> 
+        </label>
+        <label>
+            Número de signo del zodiaco:
+            <input type="text" id="Zodiaco" placeholder="escriba un numero del  1 al 12" required> 
+        </label>
+        </div>
+        <div>
+            <button type="submit" id="Boton_agregar_signo">Inscribir</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <h3>Las personas inscritas hasta este momento son:</h3>
+
+    <ul id="Lista_de_participantes">
+        
+    </ul>
+    
+    <div id="info">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
